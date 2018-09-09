@@ -26,3 +26,8 @@
 - Reapply the last 5 commits in-place, stopping to allow them to be reordered, omitted, combined or modified:
 
 `git rebase -i {{HEAD~5}}`
+
+- Rebase, keeping the original timestamps of your commits:
+
+`git rebase {{new_base}} --committer-date-is-author-date`
+

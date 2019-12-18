@@ -35,3 +35,7 @@
 - Auto-resolve any conflicts by favoring the working branch version (`theirs` keyword has reversed meaning in this case):
 
 `git rebase -X theirs {{master}}`
+
+- Rebase, keeping the original timestamps of your commits:
+
+`git rebase {{new_base}} --committer-date-is-author-date`
